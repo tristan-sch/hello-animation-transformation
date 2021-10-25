@@ -105,32 +105,33 @@ body {
 /* Dark section */
 
 .dark-container1 {
-  display: flex;
-  grid-column-start: -1;
+  grid-column-start: 3;
   grid-column-end: 4;
-  background-color: red;
-  height: 100%;
-  animation-name: dark-container1_animation;
+  background-color: #e1e1e1;
+  animation-name: dark-container_animation;
   animation-duration: 1.5s;
-  animation-delay: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+.dark-container2 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: #e1e1e1;
+  animation-name: dark-container_animation;
+  animation-duration: 1.6s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-direction: reverse;
 }
 
 /* Keyframes for dark container */
-/* @keyframes dark-container1_animation {
+@keyframes dark-container_animation {
   from {
     height: 0%;
   }
   to {
     height: 100%;
   }
-} */
-
-.dark-container2 {
-  display: flex;
-  grid-column-start: 0;
-  grid-column-end: 4;
-  background-color: red;
-  height: 100%;
 }
