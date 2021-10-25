@@ -124,6 +124,20 @@ body {
   padding-top: 3rem;
   font-size: 20px;
   text-transform: uppercase;
+  color: transparent;
+  animation-name: cta_text_animation;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes for CTA text */
+@keyframes cta_text_animation {
+  0% {
+  }
+  100% {
+    color: black;
+  }
 }
 
 /* Dark section */
