@@ -10,12 +10,16 @@ window.onload = move = () =>  {
         clearInterval(id);
       } else {
         height++; 
+        // text.style.color = "red";
         elem.style.height = height + '%';
+        elem.style.backgroundColor = "#b3b3b3";
         // elem.innerHTML = height * 1  + '%';
         text.innerHTML = height * 1  + '%';
-        text.style.color = 'black';
-        text.style.padding = '1rem';
-        text.style.fontWeight = 'bold';
+        // text.style.color = 'black';
+        // text.style.fontSize = '20px';
+        // text.style.padding = '1rem';
+        // text.style.fontWeight = '600';
+        // text.style.fontFamily = 'Montserrat';
       }
     }
   }
