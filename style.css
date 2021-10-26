@@ -9,7 +9,7 @@
 
 /* Main CSS */
 body {
-  background-color: black;
+  background-color: #121212;
 }
 
 /* Grid layout */
@@ -93,14 +93,14 @@ body {
   -moz-transform: rotate(45deg); /* Firefox */
   -webkit-transform: rotate(45deg); /* Safari et Chrome */
   -o-transform: rotate(45deg); /* Opera */
-  animation-name: cta_animation;
+  animation-name: cta_light_animation;
   animation-duration: 1s;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
 /* Keyframes for CTA */
-@keyframes cta_animation {
+@keyframes cta_light_animation {
   0% {
     color: #e1e1e1;
     border: 1px solid #e1e1e1;
@@ -125,14 +125,14 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   color: transparent;
-  animation-name: cta_text_animation;
+  animation-name: cta_light_text_animation;
   animation-duration: 1s;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
 /* Keyframes for CTA text */
-@keyframes cta_text_animation {
+@keyframes cta_light_text_animation {
   0% {
   }
   100% {
@@ -185,18 +185,42 @@ body {
   height: 150px;
   width: 150px;
   place-self: center;
-  background-color: #121212;
+  /* background-color: #121212; */
   position: fixed;
-  border: 1px solid #272727;
+  /* border: 1px solid #272727; */
   -ms-transform: rotate(45deg); /* Internet Explorer */
   -moz-transform: rotate(45deg); /* Firefox */
   -webkit-transform: rotate(45deg); /* Safari et Chrome */
   -o-transform: rotate(45deg); /* Opera */
+  animation-name: cta_dark_animation;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cta_dark_animation {
+  0% {
+    color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+  }
+  100% {
+    background-color: #121212;
+    border: 1px solid #b3b3b3;
+  }
 }
 
 .cta-dark:hover {
-  border: 1px solid #b3b3b3;
-  transition: 1s ease-in-out;
+  animation-name: cta_dark_hover_animation;
+}
+
+/* Keyframes for CTA hover */
+@keyframes cta_dark_hover_animation {
+  0% {
+  }
+  100% {
+    border: 1px solid #b3b3b3;
+    transition: 1s ease-in-out;
+  }
 }
 
 .cta-dark-txt {
@@ -208,4 +232,26 @@ body {
   padding-top: 3rem;
   font-size: 20px;
   text-transform: uppercase;
+  color: transparent;
+  animation-name: cta_dark_text_animation;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
+
+
+/* @keyframes cta_dark_text_hover_animation {
+  0% {
+  }
+  100% {
+    border: 1px solid red;;
+  }
+}
+
+
+.cta-dark:hover {
+  border: 1px solid #b3b3b3;
+  transition: 1s ease-in-out;
+  
+}
+ */
