@@ -99,23 +99,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-/* Keyframes for CTA */
-@keyframes cta_light_animation {
-  0% {
-    color: #e1e1e1;
-    border: 1px solid #e1e1e1;
-  }
-  100% {
-    background-color: #e1e1e1;
-    border: 1px solid #b3b3b3;
-  }
-}
-
-.cta-light:hover {
-  border: 1px solid #121212;
-  transition: 1s ease-in-out;
-}
-
 .cta-light-txt {
   transform: rotate(-45deg);
   font-family: Montserrat;
@@ -131,7 +114,36 @@ body {
   animation-fill-mode: forwards;
 }
 
-/* Keyframes for CTA text */
+.cta-light-hover {
+  height: 150px;
+  width: 150px;
+  place-self: center;
+  position: fixed;
+  border: 1px solid transparent;
+  -ms-transform: rotate(45deg); /* Internet Explorer */
+  -moz-transform: rotate(45deg); /* Firefox */
+  -webkit-transform: rotate(45deg); /* Safari et Chrome */
+  -o-transform: rotate(45deg); /* Opera */
+}
+
+.cta-light-hover:hover {
+  border: 1px solid blue;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+/* Keyframes for CTA light */
+@keyframes cta_light_animation {
+  0% {
+    color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+  }
+  100% {
+    background-color: #e1e1e1;
+    border: 1px solid #b3b3b3;
+  }
+}
+
 @keyframes cta_light_text_animation {
   0% {
   }
@@ -195,32 +207,8 @@ body {
   animation-name: cta_dark_animation;
   animation-duration: 1s;
   animation-delay: 5s;
+  animation-play-state: running;
   animation-fill-mode: forwards;
-}
-
-@keyframes cta_dark_animation {
-  0% {
-    color: #e1e1e1;
-    border: 1px solid #e1e1e1;
-  }
-  100% {
-    background-color: #121212;
-    border: 1px solid #b3b3b3;
-  }
-}
-
-.cta-dark:hover {
-  animation-name: cta_dark_hover_animation;
-}
-
-/* Keyframes for CTA hover */
-@keyframes cta_dark_hover_animation {
-  0% {
-  }
-  100% {
-    border: 1px solid #b3b3b3;
-    transition: 1s ease-in-out;
-  }
 }
 
 .cta-dark-txt {
@@ -235,23 +223,44 @@ body {
   color: transparent;
   animation-name: cta_dark_text_animation;
   animation-duration: 1s;
+  /* color: #e1e1e1; */
   animation-delay: 5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
+.cta-dark-hover {
+  height: 150px;
+  width: 150px;
+  place-self: center;
+  position: fixed;
+  border: 1px solid transparent;
+  -ms-transform: rotate(45deg); /* Internet Explorer */
+  -moz-transform: rotate(45deg); /* Firefox */
+  -webkit-transform: rotate(45deg); /* Safari et Chrome */
+  -o-transform: rotate(45deg); /* Opera */
+}
 
-/* @keyframes cta_dark_text_hover_animation {
+.cta-dark-hover:hover {
+  border: 1px solid blue;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes cta_dark_animation {
+  0% {
+    color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+  }
+  100% {
+    background-color: #121212;
+    border: 1px solid #b3b3b3;
+  }
+}
+
+@keyframes cta_dark_text_animation {
   0% {
   }
   100% {
-    border: 1px solid red;;
+    color: white;
   }
 }
-
-
-.cta-dark:hover {
-  border: 1px solid #b3b3b3;
-  transition: 1s ease-in-out;
-  
-}
- */

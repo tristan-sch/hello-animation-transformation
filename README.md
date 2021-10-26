@@ -7,7 +7,7 @@ This is my assignment for **Module 3 Design - UI Accessibility**
 
 ## What did I do?
 
-I re-created a full-screen **loading animation** from the [Cygni template](http://preview.themeforest.net/item/cygni-interactive-portfolio-wordpress-theme/full_screen_preview/27917817?_ga=2.164354936.613568388.1635071376-1708789936.1610465670).
+I tried to re-create a full-screen **loading animation** from the [Cygni template](http://preview.themeforest.net/item/cygni-interactive-portfolio-wordpress-theme/full_screen_preview/27917817?_ga=2.164354936.613568388.1635071376-1708789936.1610465670).
 
 ## Animated elements on their own
 
@@ -47,8 +47,15 @@ function move() {
 
 ## Animated elements upon interaction
 
+- For this part I wanted to change the border color of the CTAs whith :hover.
+- **BUT** since I have _"animation-fill-mode: forwards;"_ on the CTAs (so that they keep the same state after the animation), the :hover did not work anymore.
+- After spending time searching for a solution, I ended up by creating other CTAs div just for the :hover. If you know how to solve it, please tell me. :)
+
+## Responsivity
+
+It's kind of responsive since I used grids. But i did not really work on it.
+
 ## Resources
 
 - [CSS @keyframes Rule](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
 - [W3.CSS Progress Bars](https://www.w3schools.com/w3css/w3css_progressbar.asp)
-- [xx](xx)
