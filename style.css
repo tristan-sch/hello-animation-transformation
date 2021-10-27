@@ -126,10 +126,10 @@ body {
   -o-transform: rotate(45deg); /* Opera */
 }
 
-.cta-light-hover:hover {
-  border: 1px solid blue;
-  transition: 1s ease-in-out;
-  cursor: pointer;
+.cta-light:hover {
+  border: 1px solid blue !important;
+  transition: 1s ease-in-out !important;
+  cursor: pointer !important;
 }
 
 /* Keyframes for CTA light */
@@ -240,10 +240,10 @@ body {
   -o-transform: rotate(45deg); /* Opera */
 }
 
-.cta-dark-hover:hover {
-  border: 1px solid blue;
-  transition: 1s ease-in-out;
-  cursor: pointer;
+.cta-dark:hover {
+  border: 1px solid blue !important;
+  transition: 1s ease-in-out !important;
+  cursor: pointer !important;
 }
 
 @keyframes cta_dark_animation {
