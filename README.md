@@ -47,9 +47,17 @@ function move() {
 
 ## Animated elements upon interaction
 
-- For this part I wanted to change the border color of the CTAs whith :hover.
-- **BUT** since I have _"animation-fill-mode: forwards;"_ on the CTAs (so that they keep the same state after the animation), the :hover did not work anymore.
-- After spending time searching for a solution, I ended up by creating other CTAs div just for the :hover. If you know how to solve it, please tell me. :)
+- I only put border color whith :hover for the CTAs. 
+- I had a problem with  _"animation-fill-mode: forwards;"_ -> it seemed that the animation transform mode overrode future changes and the :hover was not working
+- To fix it I asked Smári for the solution: to add _"!important"_ behind all the properties of the :hover state in CSS like so:
+
+```CSS
+.cta-light:hover {
+  border: 1px solid blue !important;
+  transition: 1s ease-in-out !important;
+  cursor: pointer !important;
+}
+```
 
 ## Responsivity
 
@@ -59,3 +67,4 @@ It's kind of responsive since I used grids. But i did not really work on it.
 
 - [CSS @keyframes Rule](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)
 - [W3.CSS Progress Bars](https://www.w3schools.com/w3css/w3css_progressbar.asp)
+- [Should :hover pseudo state style change work after CSS animation completes](https://stackoverflow.com/questions/26778434/should-hover-pseudo-state-style-change-work-after-css-animation-completes)
