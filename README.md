@@ -3,7 +3,9 @@
 This is my assignment for **Module 3 Design - UI Accessibility**
 
 - Go to the [guide](https://io.tskoli.dev/guides/5f1321b0b279dc27c467ca67)
-- Go to my [website](https://tristan-sch.github.io/hello-animation-transformation/)
+- Go to my [Github live site](https://tristan-sch.github.io/hello-animation-transformation/)
+- Go to my [Glitch live site](https://hello-animation-transformation-.glitch.me/)
+- Go to my [Glitch code](https://glitch.com/edit/#!/hello-animation-transformation-)
 
 ## What did I do?
 
